@@ -4,25 +4,23 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class demoTest {
     public static void main(String[] args) throws InterruptedException {
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
 
-        // Open Google
         driver.get("https://www.google.com");
-        Thread.sleep(2000); // tunggu 2s
 
-        // Finding text box
         WebElement searchBox = driver.findElement(By.name("q"));
         searchBox.sendKeys("Selenium WebDriver");
-        Thread.sleep(2000); // tunggu 2s
+        Thread.sleep(2000);
 
-        // Submit search
         searchBox.submit();
-        Thread.sleep(3000); // tunggu 3s nak tengok result
+        Thread.sleep(3000);
 
-        // Getting title page
         System.out.println("Page title: " + driver.getTitle());
 
         driver.quit();

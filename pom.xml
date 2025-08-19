@@ -53,11 +53,11 @@
                   <goals>
                     <goal>java</goal>
                   </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <mainClass>com.example.demoTest</mainClass>
-            </configuration>
+                </execution>
+              </executions>
+              <configuration>
+                <mainClass>com.example.demoTest</mainClass>
+              </configuration>
           </plugin>
         </plugins>
     </build>

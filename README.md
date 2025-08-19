@@ -20,8 +20,10 @@ This is a sample Java project demonstrating **Selenium WebDriver** automation wi
 
 ```bash
 mvn clean test
+```
 
 ### Run a Java Class Directly
 
 ```bash
 mvn compile exec:java
+```

@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class NGTest {
+public class NG2Test {
 
     WebDriver driver;
 
@@ -26,7 +26,7 @@ public class NGTest {
 
     @Test
     public void searchSeleniumWebDriver() throws InterruptedException {
-        driver.get("https://www.google.com");
+        driver.get("https://www.bing.com");
 
         // WebElement searchBox = driver.findElement(By.name("q"));
         // searchBox.sendKeys("Selenium WebDriver");
